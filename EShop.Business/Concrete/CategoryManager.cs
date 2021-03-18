@@ -15,6 +15,7 @@ namespace EShop.Business.Concrete
         public CategoryManager(ICategoryDal categoryDal)
         {
             _categoryDal = categoryDal;
+
         }
 
         public List<Category> GetAll()
