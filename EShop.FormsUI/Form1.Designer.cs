@@ -47,10 +47,10 @@ namespace EShop.FormsUI
             this.lblMinUnitPrice = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.tbxMinUnitPrice = new System.Windows.Forms.TextBox();
-            this.lblCategoryNameSearching = new System.Windows.Forms.Label();
+            this.lblCategoryIdSearchingProducts = new System.Windows.Forms.Label();
             this.lblProductNameSearching = new System.Windows.Forms.Label();
             this.lblProductIdSearching = new System.Windows.Forms.Label();
-            this.tbxCategoryNameSearching = new System.Windows.Forms.TextBox();
+            this.tbxCategoryNameSearchingProducts = new System.Windows.Forms.TextBox();
             this.tbxProductNameSearching = new System.Windows.Forms.TextBox();
             this.tbxProductIdSearching = new System.Windows.Forms.TextBox();
             this.btnDeleteProducts = new System.Windows.Forms.Button();
@@ -58,47 +58,47 @@ namespace EShop.FormsUI
             this.tbxQuantityProductUpdate = new System.Windows.Forms.TextBox();
             this.lblQuantityProductUpdate = new System.Windows.Forms.Label();
             this.btnUpdateProducts = new System.Windows.Forms.Button();
-            this.tbxCategoryNameUpdateProducts = new System.Windows.Forms.TextBox();
+            this.tbxCategoryIdUpdate = new System.Windows.Forms.TextBox();
             this.tbxUnitPriceUpdate = new System.Windows.Forms.TextBox();
             this.tbxAmountStockUpdate = new System.Windows.Forms.TextBox();
             this.tbxProductNameUpdate = new System.Windows.Forms.TextBox();
             this.lblAmountStockUpdate = new System.Windows.Forms.Label();
             this.lblUnitPriceUpdate = new System.Windows.Forms.Label();
-            this.lblCategoryNameUpdateProducts = new System.Windows.Forms.Label();
+            this.lblCategoryIdUpdate = new System.Windows.Forms.Label();
             this.lblProductNameUpdate = new System.Windows.Forms.Label();
             this.gbxAddProducts = new System.Windows.Forms.GroupBox();
             this.lblQuantityProductAdd = new System.Windows.Forms.Label();
             this.tbxAmountStockAdd = new System.Windows.Forms.TextBox();
             this.btnAddProducts = new System.Windows.Forms.Button();
-            this.tbxCategoryNameAddProducts = new System.Windows.Forms.TextBox();
+            this.tbxCategoryIdAdd = new System.Windows.Forms.TextBox();
             this.tbxUnitPriceAdd = new System.Windows.Forms.TextBox();
             this.tbxQuantityProductAdd = new System.Windows.Forms.TextBox();
             this.tbxProductNameAdd = new System.Windows.Forms.TextBox();
             this.lblAmountStockAdd = new System.Windows.Forms.Label();
             this.lblUnitPriceAdd = new System.Windows.Forms.Label();
-            this.lblCategoryNameAddProducts = new System.Windows.Forms.Label();
+            this.lblCategoryIdAdd = new System.Windows.Forms.Label();
             this.lblProductNameAdd = new System.Windows.Forms.Label();
             this.gbxCrudCategories = new System.Windows.Forms.GroupBox();
             this.gbxCategorySearching = new System.Windows.Forms.GroupBox();
-            this.lblCategoryNameSearchingCategories = new System.Windows.Forms.Label();
+            this.lblCategoryNameSearching = new System.Windows.Forms.Label();
             this.lblDescriptionSearching = new System.Windows.Forms.Label();
-            this.lblCategoryIdSearching = new System.Windows.Forms.Label();
-            this.tbxCategoryNameSearchingCategories = new System.Windows.Forms.TextBox();
+            this.lblCategoryIdSearchingCategories = new System.Windows.Forms.Label();
+            this.tbxCategoryNameSearching = new System.Windows.Forms.TextBox();
             this.tbxDescriptionSearching = new System.Windows.Forms.TextBox();
             this.tbxCategoryIdSearching = new System.Windows.Forms.TextBox();
             this.btnDeleteCategories = new System.Windows.Forms.Button();
             this.gbxUpdateCategories = new System.Windows.Forms.GroupBox();
             this.btnUpdateCategories = new System.Windows.Forms.Button();
             this.tbxDescriptionUpdate = new System.Windows.Forms.TextBox();
-            this.tbxCategoryNameUpdateCategories = new System.Windows.Forms.TextBox();
+            this.tbxCategoryNameUpdate = new System.Windows.Forms.TextBox();
             this.lblDescriptionUpdate = new System.Windows.Forms.Label();
-            this.lblCategoryNameUpdateCategories = new System.Windows.Forms.Label();
+            this.lblCategoryNameUpdate = new System.Windows.Forms.Label();
             this.gbxAddCategories = new System.Windows.Forms.GroupBox();
             this.btnAddCategories = new System.Windows.Forms.Button();
             this.tbxDescriptionAdd = new System.Windows.Forms.TextBox();
-            this.tbxCategoryNameAddCategories = new System.Windows.Forms.TextBox();
+            this.tbxCategoryNameAdd = new System.Windows.Forms.TextBox();
             this.lblDescriptionAdd = new System.Windows.Forms.Label();
-            this.lblCategoryNameAddCategories = new System.Windows.Forms.Label();
+            this.lblCategoryNameAdd = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwCategories)).BeginInit();
             this.gbxCrudProducts.SuspendLayout();
@@ -184,10 +184,10 @@ namespace EShop.FormsUI
             // gbxSearchingProducts
             // 
             this.gbxSearchingProducts.Controls.Add(this.gbxUnitPrice);
-            this.gbxSearchingProducts.Controls.Add(this.lblCategoryNameSearching);
+            this.gbxSearchingProducts.Controls.Add(this.lblCategoryIdSearchingProducts);
             this.gbxSearchingProducts.Controls.Add(this.lblProductNameSearching);
             this.gbxSearchingProducts.Controls.Add(this.lblProductIdSearching);
-            this.gbxSearchingProducts.Controls.Add(this.tbxCategoryNameSearching);
+            this.gbxSearchingProducts.Controls.Add(this.tbxCategoryNameSearchingProducts);
             this.gbxSearchingProducts.Controls.Add(this.tbxProductNameSearching);
             this.gbxSearchingProducts.Controls.Add(this.tbxProductIdSearching);
             this.gbxSearchingProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -280,14 +280,14 @@ namespace EShop.FormsUI
             this.tbxMinUnitPrice.Size = new System.Drawing.Size(47, 24);
             this.tbxMinUnitPrice.TabIndex = 3;
             // 
-            // lblCategoryNameSearching
+            // lblCategoryIdSearchingProducts
             // 
-            this.lblCategoryNameSearching.AutoSize = true;
-            this.lblCategoryNameSearching.Location = new System.Drawing.Point(38, 63);
-            this.lblCategoryNameSearching.Name = "lblCategoryNameSearching";
-            this.lblCategoryNameSearching.Size = new System.Drawing.Size(119, 20);
-            this.lblCategoryNameSearching.TabIndex = 6;
-            this.lblCategoryNameSearching.Text = "Category Name";
+            this.lblCategoryIdSearchingProducts.AutoSize = true;
+            this.lblCategoryIdSearchingProducts.Location = new System.Drawing.Point(59, 63);
+            this.lblCategoryIdSearchingProducts.Name = "lblCategoryIdSearchingProducts";
+            this.lblCategoryIdSearchingProducts.Size = new System.Drawing.Size(91, 20);
+            this.lblCategoryIdSearchingProducts.TabIndex = 6;
+            this.lblCategoryIdSearchingProducts.Text = "Category Id";
             // 
             // lblProductNameSearching
             // 
@@ -307,12 +307,12 @@ namespace EShop.FormsUI
             this.lblProductIdSearching.TabIndex = 4;
             this.lblProductIdSearching.Text = "Product Id";
             // 
-            // tbxCategoryNameSearching
+            // tbxCategoryNameSearchingProducts
             // 
-            this.tbxCategoryNameSearching.Location = new System.Drawing.Point(159, 60);
-            this.tbxCategoryNameSearching.Name = "tbxCategoryNameSearching";
-            this.tbxCategoryNameSearching.Size = new System.Drawing.Size(168, 26);
-            this.tbxCategoryNameSearching.TabIndex = 2;
+            this.tbxCategoryNameSearchingProducts.Location = new System.Drawing.Point(159, 60);
+            this.tbxCategoryNameSearchingProducts.Name = "tbxCategoryNameSearchingProducts";
+            this.tbxCategoryNameSearchingProducts.Size = new System.Drawing.Size(168, 26);
+            this.tbxCategoryNameSearchingProducts.TabIndex = 2;
             // 
             // tbxProductNameSearching
             // 
@@ -344,13 +344,13 @@ namespace EShop.FormsUI
             this.gbxUpdateProducts.Controls.Add(this.tbxQuantityProductUpdate);
             this.gbxUpdateProducts.Controls.Add(this.lblQuantityProductUpdate);
             this.gbxUpdateProducts.Controls.Add(this.btnUpdateProducts);
-            this.gbxUpdateProducts.Controls.Add(this.tbxCategoryNameUpdateProducts);
+            this.gbxUpdateProducts.Controls.Add(this.tbxCategoryIdUpdate);
             this.gbxUpdateProducts.Controls.Add(this.tbxUnitPriceUpdate);
             this.gbxUpdateProducts.Controls.Add(this.tbxAmountStockUpdate);
             this.gbxUpdateProducts.Controls.Add(this.tbxProductNameUpdate);
             this.gbxUpdateProducts.Controls.Add(this.lblAmountStockUpdate);
             this.gbxUpdateProducts.Controls.Add(this.lblUnitPriceUpdate);
-            this.gbxUpdateProducts.Controls.Add(this.lblCategoryNameUpdateProducts);
+            this.gbxUpdateProducts.Controls.Add(this.lblCategoryIdUpdate);
             this.gbxUpdateProducts.Controls.Add(this.lblProductNameUpdate);
             this.gbxUpdateProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.gbxUpdateProducts.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -388,12 +388,12 @@ namespace EShop.FormsUI
             this.btnUpdateProducts.Text = "Update";
             this.btnUpdateProducts.UseVisualStyleBackColor = false;
             // 
-            // tbxCategoryNameUpdateProducts
+            // tbxCategoryIdUpdate
             // 
-            this.tbxCategoryNameUpdateProducts.Location = new System.Drawing.Point(149, 59);
-            this.tbxCategoryNameUpdateProducts.Name = "tbxCategoryNameUpdateProducts";
-            this.tbxCategoryNameUpdateProducts.Size = new System.Drawing.Size(114, 26);
-            this.tbxCategoryNameUpdateProducts.TabIndex = 7;
+            this.tbxCategoryIdUpdate.Location = new System.Drawing.Point(149, 59);
+            this.tbxCategoryIdUpdate.Name = "tbxCategoryIdUpdate";
+            this.tbxCategoryIdUpdate.Size = new System.Drawing.Size(114, 26);
+            this.tbxCategoryIdUpdate.TabIndex = 7;
             // 
             // tbxUnitPriceUpdate
             // 
@@ -434,14 +434,14 @@ namespace EShop.FormsUI
             this.lblUnitPriceUpdate.TabIndex = 2;
             this.lblUnitPriceUpdate.Text = "Unit Price";
             // 
-            // lblCategoryNameUpdateProducts
+            // lblCategoryIdUpdate
             // 
-            this.lblCategoryNameUpdateProducts.AutoSize = true;
-            this.lblCategoryNameUpdateProducts.Location = new System.Drawing.Point(24, 62);
-            this.lblCategoryNameUpdateProducts.Name = "lblCategoryNameUpdateProducts";
-            this.lblCategoryNameUpdateProducts.Size = new System.Drawing.Size(119, 20);
-            this.lblCategoryNameUpdateProducts.TabIndex = 1;
-            this.lblCategoryNameUpdateProducts.Text = "Category Name";
+            this.lblCategoryIdUpdate.AutoSize = true;
+            this.lblCategoryIdUpdate.Location = new System.Drawing.Point(52, 62);
+            this.lblCategoryIdUpdate.Name = "lblCategoryIdUpdate";
+            this.lblCategoryIdUpdate.Size = new System.Drawing.Size(91, 20);
+            this.lblCategoryIdUpdate.TabIndex = 1;
+            this.lblCategoryIdUpdate.Text = "Category Id";
             // 
             // lblProductNameUpdate
             // 
@@ -457,13 +457,13 @@ namespace EShop.FormsUI
             this.gbxAddProducts.Controls.Add(this.lblQuantityProductAdd);
             this.gbxAddProducts.Controls.Add(this.tbxAmountStockAdd);
             this.gbxAddProducts.Controls.Add(this.btnAddProducts);
-            this.gbxAddProducts.Controls.Add(this.tbxCategoryNameAddProducts);
+            this.gbxAddProducts.Controls.Add(this.tbxCategoryIdAdd);
             this.gbxAddProducts.Controls.Add(this.tbxUnitPriceAdd);
             this.gbxAddProducts.Controls.Add(this.tbxQuantityProductAdd);
             this.gbxAddProducts.Controls.Add(this.tbxProductNameAdd);
             this.gbxAddProducts.Controls.Add(this.lblAmountStockAdd);
             this.gbxAddProducts.Controls.Add(this.lblUnitPriceAdd);
-            this.gbxAddProducts.Controls.Add(this.lblCategoryNameAddProducts);
+            this.gbxAddProducts.Controls.Add(this.lblCategoryIdAdd);
             this.gbxAddProducts.Controls.Add(this.lblProductNameAdd);
             this.gbxAddProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.gbxAddProducts.Location = new System.Drawing.Point(16, 28);
@@ -499,12 +499,12 @@ namespace EShop.FormsUI
             this.btnAddProducts.Text = "Add";
             this.btnAddProducts.UseVisualStyleBackColor = false;
             // 
-            // tbxCategoryNameAddProducts
+            // tbxCategoryIdAdd
             // 
-            this.tbxCategoryNameAddProducts.Location = new System.Drawing.Point(140, 62);
-            this.tbxCategoryNameAddProducts.Name = "tbxCategoryNameAddProducts";
-            this.tbxCategoryNameAddProducts.Size = new System.Drawing.Size(115, 26);
-            this.tbxCategoryNameAddProducts.TabIndex = 7;
+            this.tbxCategoryIdAdd.Location = new System.Drawing.Point(140, 62);
+            this.tbxCategoryIdAdd.Name = "tbxCategoryIdAdd";
+            this.tbxCategoryIdAdd.Size = new System.Drawing.Size(115, 26);
+            this.tbxCategoryIdAdd.TabIndex = 7;
             // 
             // tbxUnitPriceAdd
             // 
@@ -545,14 +545,14 @@ namespace EShop.FormsUI
             this.lblUnitPriceAdd.TabIndex = 2;
             this.lblUnitPriceAdd.Text = "Unit Price";
             // 
-            // lblCategoryNameAddProducts
+            // lblCategoryIdAdd
             // 
-            this.lblCategoryNameAddProducts.AutoSize = true;
-            this.lblCategoryNameAddProducts.Location = new System.Drawing.Point(14, 65);
-            this.lblCategoryNameAddProducts.Name = "lblCategoryNameAddProducts";
-            this.lblCategoryNameAddProducts.Size = new System.Drawing.Size(119, 20);
-            this.lblCategoryNameAddProducts.TabIndex = 1;
-            this.lblCategoryNameAddProducts.Text = "Category Name";
+            this.lblCategoryIdAdd.AutoSize = true;
+            this.lblCategoryIdAdd.Location = new System.Drawing.Point(39, 62);
+            this.lblCategoryIdAdd.Name = "lblCategoryIdAdd";
+            this.lblCategoryIdAdd.Size = new System.Drawing.Size(91, 20);
+            this.lblCategoryIdAdd.TabIndex = 1;
+            this.lblCategoryIdAdd.Text = "Category Id";
             // 
             // lblProductNameAdd
             // 
@@ -581,10 +581,10 @@ namespace EShop.FormsUI
             // 
             // gbxCategorySearching
             // 
-            this.gbxCategorySearching.Controls.Add(this.lblCategoryNameSearchingCategories);
+            this.gbxCategorySearching.Controls.Add(this.lblCategoryNameSearching);
             this.gbxCategorySearching.Controls.Add(this.lblDescriptionSearching);
-            this.gbxCategorySearching.Controls.Add(this.lblCategoryIdSearching);
-            this.gbxCategorySearching.Controls.Add(this.tbxCategoryNameSearchingCategories);
+            this.gbxCategorySearching.Controls.Add(this.lblCategoryIdSearchingCategories);
+            this.gbxCategorySearching.Controls.Add(this.tbxCategoryNameSearching);
             this.gbxCategorySearching.Controls.Add(this.tbxDescriptionSearching);
             this.gbxCategorySearching.Controls.Add(this.tbxCategoryIdSearching);
             this.gbxCategorySearching.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
@@ -595,14 +595,14 @@ namespace EShop.FormsUI
             this.gbxCategorySearching.TabStop = false;
             this.gbxCategorySearching.Text = " Search Category";
             // 
-            // lblCategoryNameSearchingCategories
+            // lblCategoryNameSearching
             // 
-            this.lblCategoryNameSearchingCategories.AutoSize = true;
-            this.lblCategoryNameSearchingCategories.Location = new System.Drawing.Point(34, 77);
-            this.lblCategoryNameSearchingCategories.Name = "lblCategoryNameSearchingCategories";
-            this.lblCategoryNameSearchingCategories.Size = new System.Drawing.Size(119, 20);
-            this.lblCategoryNameSearchingCategories.TabIndex = 6;
-            this.lblCategoryNameSearchingCategories.Text = "Category Name";
+            this.lblCategoryNameSearching.AutoSize = true;
+            this.lblCategoryNameSearching.Location = new System.Drawing.Point(34, 77);
+            this.lblCategoryNameSearching.Name = "lblCategoryNameSearching";
+            this.lblCategoryNameSearching.Size = new System.Drawing.Size(119, 20);
+            this.lblCategoryNameSearching.TabIndex = 6;
+            this.lblCategoryNameSearching.Text = "Category Name";
             // 
             // lblDescriptionSearching
             // 
@@ -613,21 +613,21 @@ namespace EShop.FormsUI
             this.lblDescriptionSearching.TabIndex = 5;
             this.lblDescriptionSearching.Text = "Description";
             // 
-            // lblCategoryIdSearching
+            // lblCategoryIdSearchingCategories
             // 
-            this.lblCategoryIdSearching.AutoSize = true;
-            this.lblCategoryIdSearching.Location = new System.Drawing.Point(62, 31);
-            this.lblCategoryIdSearching.Name = "lblCategoryIdSearching";
-            this.lblCategoryIdSearching.Size = new System.Drawing.Size(91, 20);
-            this.lblCategoryIdSearching.TabIndex = 4;
-            this.lblCategoryIdSearching.Text = "Category Id";
+            this.lblCategoryIdSearchingCategories.AutoSize = true;
+            this.lblCategoryIdSearchingCategories.Location = new System.Drawing.Point(62, 31);
+            this.lblCategoryIdSearchingCategories.Name = "lblCategoryIdSearchingCategories";
+            this.lblCategoryIdSearchingCategories.Size = new System.Drawing.Size(91, 20);
+            this.lblCategoryIdSearchingCategories.TabIndex = 4;
+            this.lblCategoryIdSearchingCategories.Text = "Category Id";
             // 
-            // tbxCategoryNameSearchingCategories
+            // tbxCategoryNameSearching
             // 
-            this.tbxCategoryNameSearchingCategories.Location = new System.Drawing.Point(159, 74);
-            this.tbxCategoryNameSearchingCategories.Name = "tbxCategoryNameSearchingCategories";
-            this.tbxCategoryNameSearchingCategories.Size = new System.Drawing.Size(168, 26);
-            this.tbxCategoryNameSearchingCategories.TabIndex = 2;
+            this.tbxCategoryNameSearching.Location = new System.Drawing.Point(159, 74);
+            this.tbxCategoryNameSearching.Name = "tbxCategoryNameSearching";
+            this.tbxCategoryNameSearching.Size = new System.Drawing.Size(168, 26);
+            this.tbxCategoryNameSearching.TabIndex = 2;
             // 
             // tbxDescriptionSearching
             // 
@@ -658,9 +658,9 @@ namespace EShop.FormsUI
             // 
             this.gbxUpdateCategories.Controls.Add(this.btnUpdateCategories);
             this.gbxUpdateCategories.Controls.Add(this.tbxDescriptionUpdate);
-            this.gbxUpdateCategories.Controls.Add(this.tbxCategoryNameUpdateCategories);
+            this.gbxUpdateCategories.Controls.Add(this.tbxCategoryNameUpdate);
             this.gbxUpdateCategories.Controls.Add(this.lblDescriptionUpdate);
-            this.gbxUpdateCategories.Controls.Add(this.lblCategoryNameUpdateCategories);
+            this.gbxUpdateCategories.Controls.Add(this.lblCategoryNameUpdate);
             this.gbxUpdateCategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.gbxUpdateCategories.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gbxUpdateCategories.Location = new System.Drawing.Point(321, 28);
@@ -688,12 +688,12 @@ namespace EShop.FormsUI
             this.tbxDescriptionUpdate.Size = new System.Drawing.Size(114, 26);
             this.tbxDescriptionUpdate.TabIndex = 6;
             // 
-            // tbxCategoryNameUpdateCategories
+            // tbxCategoryNameUpdate
             // 
-            this.tbxCategoryNameUpdateCategories.Location = new System.Drawing.Point(149, 42);
-            this.tbxCategoryNameUpdateCategories.Name = "tbxCategoryNameUpdateCategories";
-            this.tbxCategoryNameUpdateCategories.Size = new System.Drawing.Size(114, 26);
-            this.tbxCategoryNameUpdateCategories.TabIndex = 4;
+            this.tbxCategoryNameUpdate.Location = new System.Drawing.Point(149, 42);
+            this.tbxCategoryNameUpdate.Name = "tbxCategoryNameUpdate";
+            this.tbxCategoryNameUpdate.Size = new System.Drawing.Size(114, 26);
+            this.tbxCategoryNameUpdate.TabIndex = 4;
             // 
             // lblDescriptionUpdate
             // 
@@ -704,22 +704,22 @@ namespace EShop.FormsUI
             this.lblDescriptionUpdate.TabIndex = 1;
             this.lblDescriptionUpdate.Text = "Description";
             // 
-            // lblCategoryNameUpdateCategories
+            // lblCategoryNameUpdate
             // 
-            this.lblCategoryNameUpdateCategories.AutoSize = true;
-            this.lblCategoryNameUpdateCategories.Location = new System.Drawing.Point(24, 45);
-            this.lblCategoryNameUpdateCategories.Name = "lblCategoryNameUpdateCategories";
-            this.lblCategoryNameUpdateCategories.Size = new System.Drawing.Size(119, 20);
-            this.lblCategoryNameUpdateCategories.TabIndex = 0;
-            this.lblCategoryNameUpdateCategories.Text = "Category Name";
+            this.lblCategoryNameUpdate.AutoSize = true;
+            this.lblCategoryNameUpdate.Location = new System.Drawing.Point(24, 45);
+            this.lblCategoryNameUpdate.Name = "lblCategoryNameUpdate";
+            this.lblCategoryNameUpdate.Size = new System.Drawing.Size(119, 20);
+            this.lblCategoryNameUpdate.TabIndex = 0;
+            this.lblCategoryNameUpdate.Text = "Category Name";
             // 
             // gbxAddCategories
             // 
             this.gbxAddCategories.Controls.Add(this.btnAddCategories);
             this.gbxAddCategories.Controls.Add(this.tbxDescriptionAdd);
-            this.gbxAddCategories.Controls.Add(this.tbxCategoryNameAddCategories);
+            this.gbxAddCategories.Controls.Add(this.tbxCategoryNameAdd);
             this.gbxAddCategories.Controls.Add(this.lblDescriptionAdd);
-            this.gbxAddCategories.Controls.Add(this.lblCategoryNameAddCategories);
+            this.gbxAddCategories.Controls.Add(this.lblCategoryNameAdd);
             this.gbxAddCategories.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.gbxAddCategories.Location = new System.Drawing.Point(27, 39);
             this.gbxAddCategories.Name = "gbxAddCategories";
@@ -745,12 +745,12 @@ namespace EShop.FormsUI
             this.tbxDescriptionAdd.Size = new System.Drawing.Size(115, 26);
             this.tbxDescriptionAdd.TabIndex = 7;
             // 
-            // tbxCategoryNameAddCategories
+            // tbxCategoryNameAdd
             // 
-            this.tbxCategoryNameAddCategories.Location = new System.Drawing.Point(140, 31);
-            this.tbxCategoryNameAddCategories.Name = "tbxCategoryNameAddCategories";
-            this.tbxCategoryNameAddCategories.Size = new System.Drawing.Size(115, 26);
-            this.tbxCategoryNameAddCategories.TabIndex = 4;
+            this.tbxCategoryNameAdd.Location = new System.Drawing.Point(140, 31);
+            this.tbxCategoryNameAdd.Name = "tbxCategoryNameAdd";
+            this.tbxCategoryNameAdd.Size = new System.Drawing.Size(115, 26);
+            this.tbxCategoryNameAdd.TabIndex = 4;
             // 
             // lblDescriptionAdd
             // 
@@ -761,16 +761,16 @@ namespace EShop.FormsUI
             this.lblDescriptionAdd.TabIndex = 1;
             this.lblDescriptionAdd.Text = "Description";
             // 
-            // lblCategoryNameAddCategories
+            // lblCategoryNameAdd
             // 
-            this.lblCategoryNameAddCategories.AutoSize = true;
-            this.lblCategoryNameAddCategories.Location = new System.Drawing.Point(15, 34);
-            this.lblCategoryNameAddCategories.Name = "lblCategoryNameAddCategories";
-            this.lblCategoryNameAddCategories.Size = new System.Drawing.Size(119, 20);
-            this.lblCategoryNameAddCategories.TabIndex = 0;
-            this.lblCategoryNameAddCategories.Text = "Category Name";
+            this.lblCategoryNameAdd.AutoSize = true;
+            this.lblCategoryNameAdd.Location = new System.Drawing.Point(15, 34);
+            this.lblCategoryNameAdd.Name = "lblCategoryNameAdd";
+            this.lblCategoryNameAdd.Size = new System.Drawing.Size(119, 20);
+            this.lblCategoryNameAdd.TabIndex = 0;
+            this.lblCategoryNameAdd.Text = "Category Name";
             // 
-            // EShopForm
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -783,7 +783,7 @@ namespace EShop.FormsUI
             this.Controls.Add(this.dgwProducts);
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "EShopForm";
+            this.Name = "Form1";
             this.Text = "E-Shop";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwProducts)).EndInit();
@@ -823,10 +823,10 @@ namespace EShop.FormsUI
         private System.Windows.Forms.Label lblMinUnitPrice;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox tbxMinUnitPrice;
-        private System.Windows.Forms.Label lblCategoryNameSearching;
+        private System.Windows.Forms.Label lblCategoryIdSearchingProducts;
         private System.Windows.Forms.Label lblProductNameSearching;
         private System.Windows.Forms.Label lblProductIdSearching;
-        private System.Windows.Forms.TextBox tbxCategoryNameSearching;
+        private System.Windows.Forms.TextBox tbxCategoryNameSearchingProducts;
         private System.Windows.Forms.TextBox tbxProductNameSearching;
         private System.Windows.Forms.TextBox tbxProductIdSearching;
         private System.Windows.Forms.Button btnDeleteProducts;
@@ -834,47 +834,47 @@ namespace EShop.FormsUI
         private System.Windows.Forms.TextBox tbxQuantityProductUpdate;
         private System.Windows.Forms.Label lblQuantityProductUpdate;
         private System.Windows.Forms.Button btnUpdateProducts;
-        private System.Windows.Forms.TextBox tbxCategoryNameUpdateProducts;
+        private System.Windows.Forms.TextBox tbxCategoryIdUpdate;
         private System.Windows.Forms.TextBox tbxUnitPriceUpdate;
         private System.Windows.Forms.TextBox tbxAmountStockUpdate;
         private System.Windows.Forms.TextBox tbxProductNameUpdate;
         private System.Windows.Forms.Label lblAmountStockUpdate;
         private System.Windows.Forms.Label lblUnitPriceUpdate;
-        private System.Windows.Forms.Label lblCategoryNameUpdateProducts;
+        private System.Windows.Forms.Label lblCategoryIdUpdate;
         private System.Windows.Forms.Label lblProductNameUpdate;
         private System.Windows.Forms.GroupBox gbxAddProducts;
         private System.Windows.Forms.Label lblQuantityProductAdd;
         private System.Windows.Forms.TextBox tbxAmountStockAdd;
         private System.Windows.Forms.Button btnAddProducts;
-        private System.Windows.Forms.TextBox tbxCategoryNameAddProducts;
+        private System.Windows.Forms.TextBox tbxCategoryIdAdd;
         private System.Windows.Forms.TextBox tbxUnitPriceAdd;
         private System.Windows.Forms.TextBox tbxQuantityProductAdd;
         private System.Windows.Forms.TextBox tbxProductNameAdd;
         private System.Windows.Forms.Label lblAmountStockAdd;
         private System.Windows.Forms.Label lblUnitPriceAdd;
-        private System.Windows.Forms.Label lblCategoryNameAddProducts;
+        private System.Windows.Forms.Label lblCategoryIdAdd;
         private System.Windows.Forms.Label lblProductNameAdd;
         private System.Windows.Forms.GroupBox gbxCrudCategories;
         private System.Windows.Forms.GroupBox gbxCategorySearching;
-        private System.Windows.Forms.Label lblCategoryNameSearchingCategories;
+        private System.Windows.Forms.Label lblCategoryNameSearching;
         private System.Windows.Forms.Label lblDescriptionSearching;
-        private System.Windows.Forms.Label lblCategoryIdSearching;
-        private System.Windows.Forms.TextBox tbxCategoryNameSearchingCategories;
+        private System.Windows.Forms.Label lblCategoryIdSearchingCategories;
+        private System.Windows.Forms.TextBox tbxCategoryNameSearching;
         private System.Windows.Forms.TextBox tbxDescriptionSearching;
         private System.Windows.Forms.TextBox tbxCategoryIdSearching;
         private System.Windows.Forms.Button btnDeleteCategories;
         private System.Windows.Forms.GroupBox gbxUpdateCategories;
         private System.Windows.Forms.Button btnUpdateCategories;
         private System.Windows.Forms.TextBox tbxDescriptionUpdate;
-        private System.Windows.Forms.TextBox tbxCategoryNameUpdateCategories;
+        private System.Windows.Forms.TextBox tbxCategoryNameUpdate;
         private System.Windows.Forms.Label lblDescriptionUpdate;
-        private System.Windows.Forms.Label lblCategoryNameUpdateCategories;
+        private System.Windows.Forms.Label lblCategoryNameUpdate;
         private System.Windows.Forms.GroupBox gbxAddCategories;
         private System.Windows.Forms.Button btnAddCategories;
         private System.Windows.Forms.TextBox tbxDescriptionAdd;
-        private System.Windows.Forms.TextBox tbxCategoryNameAddCategories;
+        private System.Windows.Forms.TextBox tbxCategoryNameAdd;
         private System.Windows.Forms.Label lblDescriptionAdd;
-        private System.Windows.Forms.Label lblCategoryNameAddCategories;
+        private System.Windows.Forms.Label lblCategoryNameAdd;
     }
 }
 

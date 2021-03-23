@@ -15,7 +15,6 @@ namespace EShop.Business.ValidationRules.FluentValidation
             string message = "This column should not be empty.";
 
             RuleFor(p => p.ProductName).NotEmpty().WithMessage(message);
-            RuleFor(p => p.CategoryName).NotEmpty().WithMessage(message);
             RuleFor(p => p.UnitPrice).NotEmpty().WithMessage(message);
             RuleFor(p => p.QuantityProduct).NotEmpty().WithMessage(message);
             RuleFor(p => p.AmountStock).NotEmpty().WithMessage(message);
@@ -26,7 +25,6 @@ namespace EShop.Business.ValidationRules.FluentValidation
                 .WithMessage("The amount stock can not be 0 and less than 0.");
 
             RuleFor(p => p.ProductName).Must(NotStartWith).WithMessage("Please, enter the product name correctly!");
-            RuleFor(p => p.CategoryName).Must(NotStartWith).WithMessage("Please, enter the category name correctly!");
             RuleFor(p => p.QuantityProduct).Must(NotStartWith).WithMessage("Please, enter the product quantity correctly!");
         }
 

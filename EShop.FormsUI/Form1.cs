@@ -45,7 +45,7 @@ namespace EShop.FormsUI
                 _productService.Add(new Product
                 {
                     ProductName = tbxProductNameAdd.Text,
-                    CategoryName = tbxCategoryNameAddProducts.Text,
+                    CategoryId = Convert.ToInt32(tbxCategoryIdAdd.Text),
                     UnitPrice = Convert.ToDecimal(tbxUnitPriceAdd.Text),
                     QuantityProduct = tbxQuantityProductAdd.Text,
                     AmountStock = Convert.ToInt32(tbxAmountStockAdd.Text)
@@ -66,7 +66,7 @@ namespace EShop.FormsUI
             {
                 ProductId = Convert.ToInt32(dgwProducts.CurrentRow.Cells[0].Value),
                 ProductName = tbxProductNameUpdate.Text,
-                CategoryName = tbxCategoryNameUpdateProducts.Text,
+                CategoryId = Convert.ToInt32(tbxCategoryIdUpdate.Text),
                 UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text),
                 QuantityProduct = tbxQuantityProductUpdate.Text,
                 AmountStock = Convert.ToInt32(tbxAmountStockUpdate.Text)
@@ -78,7 +78,7 @@ namespace EShop.FormsUI
         {
             var temp = dgwProducts.CurrentRow.Cells;
             tbxProductNameUpdate.Text = temp[1].Value.ToString();
-            tbxCategoryNameUpdateProducts.Text = temp[2].Value.ToString();
+            tbxCategoryIdUpdate.Text = temp[2].Value.ToString();
             tbxUnitPriceUpdate.Text = temp[3].Value.ToString();
             tbxAmountStockUpdate.Text = temp[4].Value.ToString();
         }
@@ -109,10 +109,10 @@ namespace EShop.FormsUI
 
         private void tbxCategoryNameSearching_TextChanged(object sender, EventArgs e)
         {
-            var text = tbxCategoryNameSearching.Text;
+            var text = tbxCategoryIdSearching.Text;
             _utilities.Check(_utilities.IsNullOrEmpty, text, () =>
             {
-                dgwProducts.DataSource = _productService.GetByCategoryName(text);
+                dgwProducts.DataSource = _productService.GetByCategoryId(Convert.ToInt32(text));
             }, LoadProducts);
         }
         private void tbxProductNameSearching_TextChanged(object sender, EventArgs e)
@@ -156,7 +156,7 @@ namespace EShop.FormsUI
             {
                 _categoryService.Add(new Category
                 {
-                    CategoryName = tbxCategoryNameAddCategories.Text,
+                    CategoryName = tbxCategoryNameAdd.Text,
                     Description = tbxDescriptionAdd.Text
                 });
                 MessageBox.Show("The category added!", "Message");
@@ -173,7 +173,7 @@ namespace EShop.FormsUI
             _categoryService.Update(new Category
             {
                 CategoryId = Convert.ToInt32(dgwCategories.CurrentRow.Cells[0].Value),
-                CategoryName = tbxCategoryNameUpdateCategories.Text,
+                CategoryName = tbxCategoryNameUpdate.Text,
                 Description = tbxDescriptionUpdate.Text
             });
             MessageBox.Show("The category updated!", "Message");
@@ -183,7 +183,7 @@ namespace EShop.FormsUI
         private void dgwCategories_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var temp = dgwCategories.CurrentRow.Cells;
-            tbxCategoryNameUpdateCategories.Text = temp[1].Value.ToString();
+            tbxCategoryNameUpdate.Text = temp[1].Value.ToString();
             tbxDescriptionUpdate.Text = temp[2].Value.ToString();
         }
 
@@ -210,7 +210,7 @@ namespace EShop.FormsUI
 
         private void tbxCategoryNameSearchingCategories_TextChanged(object sender, EventArgs e)
         {
-            var text = tbxCategoryNameSearchingCategories.Text;
+            var text = tbxCategoryNameSearching.Text;
             _utilities.Check(_utilities.IsNullOrEmpty, text, () =>
             {
                 dgwCategories.DataSource = _categoryService.GetByCategoryName(text);

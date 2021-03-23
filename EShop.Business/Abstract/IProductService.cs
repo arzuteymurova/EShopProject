@@ -17,7 +17,7 @@ namespace EShop.Business.Abstract
         void TransactionalOperation(Product product1, Product product2);
 
         Product GetById(int id);
-        List<Product> GetByCategoryName(string name);
+        List<Product> GetByCategoryId(int categoryId);
         List<Product> GetByProductName(string name);
         List<Product> GetByUnitPrice(decimal min, decimal max);
     }

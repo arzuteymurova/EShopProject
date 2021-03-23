@@ -52,19 +52,19 @@ namespace EShop.Business.Concrete
             return _productDal.GetAll(p => p.ProductId == id).FirstOrDefault();
         }
 
-        public List<Product> GetByCategoryName(string name)
+        public List<Product> GetByCategoryId(int categoryId)
         {
-            return _productDal.GetAll(p => p.CategoryName.ToLower().Contains(name.ToLower())).ToList();
+            return _productDal.GetAll(p => p.CategoryId == categoryId);
         }
 
         public List<Product> GetByProductName(string name)
         {
-            return _productDal.GetAll(p => p.ProductName.ToLower().Contains(name.ToLower())).ToList();
+            return _productDal.GetAll(p => p.ProductName.ToLower().Contains(name.ToLower()));
         }
 
         public List<Product> GetByUnitPrice(decimal min, decimal max)
         {
-            return _productDal.GetAll(p => p.UnitPrice >= min & p.UnitPrice <= max).ToList();
+            return _productDal.GetAll(p => p.UnitPrice >= min & p.UnitPrice <= max);
         }
     }
 }

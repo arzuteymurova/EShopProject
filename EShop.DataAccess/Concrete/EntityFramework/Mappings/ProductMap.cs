@@ -15,8 +15,8 @@ namespace EShop.DataAccess.Concrete.EntityFramework.Mappings
             ToTable(@"Products");
             HasKey(p => p.ProductId);
             Property(p => p.ProductId).HasColumnName("ProductId");
+            Property(p => p.CategoryId).HasColumnName("CategoryId");
             Property(p => p.ProductName).HasColumnName("ProductName");
-            Property(p => p.CategoryName).HasColumnName("CategoryName");
             Property(p => p.UnitPrice).HasColumnName("UnitPrice");
             Property(p => p.QuantityProduct).HasColumnName("QuantityProduct");
             Property(p => p.AmountStock).HasColumnName("AmountStock");
